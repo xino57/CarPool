@@ -1,0 +1,27 @@
+
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*....................................................................header....................................................................*/
+
+/* fond body*/
+body{
+    background-color: #13293D;
+    margin: 30px;
+}
+
+/* Image */
+.imageLogo{
+    height: 200px;
+    width: 150px;
+}
+
+/* button */
+.btn-primary{
+    margin-bottom: 100px;
+}
