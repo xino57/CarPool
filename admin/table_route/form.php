@@ -7,9 +7,9 @@
     $route_endadress = ""; 
     $route_departuretime = ""; 
     $route_arrivaltime = "";
-    $route_status = "";
     $route_date = "";
     $car_id = "";
+    $route_status_id = "";
 
     if (isset($_GET["route_id"]) && $_GET["route_id"] > 0)
     {
@@ -27,9 +27,9 @@
             $route_endadress = $row["route_endadress"]; 
             $route_departuretime = $row["route_departuretime"]; 
             $route_arrivaltime = $row["route_arrivaltime"]; 
-            $route_status = $row["route_status"]; 
             $route_date = $row["route_date"]; 
             $car_id = $row["car_id"];
+            $route_status_id = $row["route_status_id"];
         }
     }
 ?>
@@ -79,12 +79,6 @@
             </div>
 
             <div class="form-group">
-                <label for="route_status">Enter route status</label>
-                <input class="form-control" id="route_status" placeholder="" name="route_status"
-                    value="<?=$route_status;?>">
-            </div>
-
-            <div class="form-group">
                 <label for="route_date">Enter route date</label>
                 <input class="form-control" id="route_date" placeholder="" name="route_date"
                     value="<?=$route_date;?>">
@@ -94,6 +88,12 @@
                 <label for="car_id">Enter route car id</label>
                 <input class="form-control" id="car_id" placeholder="" name="car_id"
                     value="<?=$car_id;?>">
+            </div>
+
+            <div class="form-group">
+                <label for="route_status_id">Enter route status id</label>
+                <input class="form-control" id="route_status_id" placeholder="" name="route_status_id"
+                    value="<?=$route_status_id;?>">
             </div>
 
             <button type="submit" class="w-100 btn btn-primary btn-block">Submit</button>

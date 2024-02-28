@@ -31,9 +31,9 @@
             <th scope="col">Route end adress</th>
             <th scope="col">Route departure time</th>
             <th scope="col">Route arrival time</th>
-            <th scope="col">Route status</th>
             <th scope="col">Route date</th>
             <th scope="col">Route car id</th>
+            <th scope="col">Route status id</th>
             <th scope="col">
                 <a href="form.php">Add new route</a>
             </th>
@@ -46,9 +46,9 @@
             <td><?=$row["route_endadress"];?></td>
             <td><?=$row["route_departuretime"];?></td>
             <td><?=$row["route_arrivaltime"];?></td>
-            <td><?=$row["route_status"];?></td>
             <td><?=$row["route_date"];?></td>
             <td><?=$row["car_id"];?></td>
+            <td><?=$row["route_status_id"];?></td>
             <td>
                 <a href="delete.php?route_id=<?=$row["route_id"];?>" title="Delete">Delete</a>
             </td>

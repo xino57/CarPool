@@ -9,15 +9,15 @@
                 route_endadress=:route_endadress,
                 route_departuretime=:route_departuretime,
                 route_arrivaltime=:route_arrivaltime,
-                route_status=:route_status,
                 route_date=:route_date,
                 car_id=:car_id
+                route_status_id=:route_status_id
                 WHERE route_id=:route_id";
     }
     else
     {
-        $sql = "INSERT INTO table_route (route_start, route_endadress, route_departuretime, route_arrivaltime, route_status, route_date, car_id)
-                VALUES (:route_start, :route_endadress, :route_departuretime, :route_arrivaltime, :route_status, :route_date, :car_id)";
+        $sql = "INSERT INTO table_route (route_start, route_endadress, route_departuretime, route_arrivaltime, route_date, car_id, route_status_id)
+                VALUES (:route_start, :route_endadress, :route_departuretime, :route_arrivaltime, :route_date, :car_id, :route_status_id)";
     }
 
     $statement = $db->prepare($sql);
@@ -41,10 +41,6 @@
     {
         $statement->bindParam(":route_arrivaltime", $_POST["route_arrivaltime"]);
     }
-    if (isset($_POST["route_status"]))
-    {
-        $statement->bindParam(":route_status", $_POST["route_status"]);
-    }
     if (isset($_POST["route_date"]))
     {
         $statement->bindParam(":route_date", $_POST["route_date"]);
@@ -52,6 +48,10 @@
     if (isset($_POST["car_id"]))
     {
         $statement->bindParam(":car_id", $_POST["car_id"]);
+    }
+    if (isset($_POST["route_status_id"]))
+    {
+        $statement->bindParam(":route_status_id", $_POST["route_status_id"]);
     }
     
     $statement->execute();
