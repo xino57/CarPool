@@ -62,8 +62,7 @@
 
             <div class="form-group">
                 <label for="comment_content">Enter comment content</label>
-                <input class="form-control" id="comment_content" placeholder="" name="comment_content"
-                    value="<?=$comment_content;?>">
+                <textarea class="form-control" id="comment_content" placeholder="" name="comment_content" rows="4"><?=$comment_content;?></textarea>
             </div>
 
             <div class="form-group">

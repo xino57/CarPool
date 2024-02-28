@@ -48,8 +48,7 @@
 
             <div class="form-group">
                 <label for="cancel_pattern_content">Enter cancel pattern content</label>
-                <input class="form-control" id="cancel_pattern_content" placeholder="" name="cancel_pattern_content"
-                    value="<?=$cancel_pattern_content;?>">
+                <textarea class="form-control" id="cancel_pattern_content" name="cancel_pattern_content" rows="4"><?=$cancel_pattern_content;?></textarea>
             </div>
 
             <div class="form-group">
