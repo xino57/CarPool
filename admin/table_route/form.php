@@ -3,7 +3,7 @@
     require_once $_SERVER['DOCUMENT_ROOT']."/admin/include/connect.php";
     
     $route_id = ""; 
-    $route_start = ""; 
+    $route_startadress = ""; 
     $route_endadress = ""; 
     $route_departuretime = ""; 
     $route_arrivaltime = "";
@@ -23,7 +23,7 @@
         if ($row = $statement->fetch())
         {
             $route_id = $row["route_id"]; 
-            $route_start = $row["route_start"]; 
+            $route_startadress = $row["route_startadress"]; 
             $route_endadress = $row["route_endadress"]; 
             $route_departuretime = $row["route_departuretime"]; 
             $route_arrivaltime = $row["route_arrivaltime"]; 
@@ -55,9 +55,9 @@
             </div>
         
             <div class="form-group">
-                <label for="route_start">Enter route start</label>
-                <input class="form-control" id="route_start" placeholder="" name="route_start"
-                    value="<?=$route_start;?>">
+                <label for="route_startadress">Enter route start adress</label>
+                <input class="form-control" id="route_startadress" placeholder="" name="route_startadress"
+                    value="<?=$route_startadress;?>">
             </div>
 
             <div class="form-group">

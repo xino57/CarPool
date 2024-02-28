@@ -42,7 +42,7 @@
         <?php foreach ($recordset as $row) { ?>
         <tr>
             <td><?=$row["route_id"];?></td>
-            <td><?=$row["route_start"];?></td>
+            <td><?=$row["route_startadress"];?></td>
             <td><?=$row["route_endadress"];?></td>
             <td><?=$row["route_departuretime"];?></td>
             <td><?=$row["route_arrivaltime"];?></td>

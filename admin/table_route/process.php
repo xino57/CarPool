@@ -5,7 +5,7 @@
     if (isset($_POST["route_id"]) && $_POST["route_id"] > 0)
     {
         $sql = "UPDATE table_route SET 
-                route_start=:route_start,
+                route_startadress=:route_startadress,
                 route_endadress=:route_endadress,
                 route_departuretime=:route_departuretime,
                 route_arrivaltime=:route_arrivaltime,
@@ -16,8 +16,8 @@
     }
     else
     {
-        $sql = "INSERT INTO table_route (route_start, route_endadress, route_departuretime, route_arrivaltime, route_date, car_id, route_status_id)
-                VALUES (:route_start, :route_endadress, :route_departuretime, :route_arrivaltime, :route_date, :car_id, :route_status_id)";
+        $sql = "INSERT INTO table_route (route_startadress, route_endadress, route_departuretime, route_arrivaltime, route_date, car_id, route_status_id)
+                VALUES (:route_startadress, :route_endadress, :route_departuretime, :route_arrivaltime, :route_date, :car_id, :route_status_id)";
     }
 
     $statement = $db->prepare($sql);
@@ -25,9 +25,9 @@
     {
         $statement->bindParam(":route_id", $_POST["route_id"]);
     }
-    if (isset($_POST["route_start"]))
+    if (isset($_POST["route_startadress"]))
     {
-        $statement->bindParam(":route_start", $_POST["route_start"]);
+        $statement->bindParam(":route_startadress", $_POST["route_startadress"]);
     }
     if (isset($_POST["route_endadress"]))
     {
