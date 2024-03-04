@@ -1,0 +1,28 @@
+/* styles.css */
+
+:root {
+    --primary-color: #ff7b01;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color); 
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+.bg-custom-blue {
+    background-color: #13293D; 
+}
+
+.text-info{
+    color: #fff;
+}
+
+.pb-4 {
+    padding-bottom: 5.5rem !important;
+}
