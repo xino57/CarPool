@@ -2,12 +2,19 @@
 
 :root {
     --primary-color: #ff7b01;
+    --secondary-color: #1b98e0;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: var(--primary-color); 
+    background-color: var(--primary-color);
     border-color: var(--primary-color);
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .btn-primary:hover {
@@ -16,13 +23,14 @@
 }
 
 .bg-custom-blue {
-    background-color: #13293D; 
+    background-color: #13293d;
 }
 
-.text-info{
+.text-info {
     color: #fff;
 }
 
 .pb-4 {
     padding-bottom: 5.5rem !important;
 }
+
