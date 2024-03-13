@@ -1,0 +1,29 @@
+.offers-requests-elems {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #247BA0;
+}
+
+.offers-requests-common-elem {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 75px;
+	background-color: #13293D;
+	color: white;
+	font-size: 1.25rem;
+}
+
+.offers-requests-action-elem {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 75px;
+	background-color: #ff7b01;
+	color: white;
+	font-size: 1.25rem;
+}
+
+.char-space {
+	width: 2px;
+}
