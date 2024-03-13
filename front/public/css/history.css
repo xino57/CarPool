@@ -1,0 +1,43 @@
+.history-elems {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #247BA0;
+}
+
+.history-common-elem {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 75px;
+    background-color: #13293D;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.history-cancel-action-elem {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 75px;
+    background-color: #ff7b01;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.history-comment-action-elem {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 75px;
+    background-color: white;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.page-description-block {
+    background-color: #1B98E0;
+    height: 140px;
+}
+
+.char-space {
+    width: 2px;
+}
