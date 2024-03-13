@@ -1,0 +1,42 @@
+.custom-text-left {
+    text-align: left;
+}
+
+.background-squares {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.box-1 {
+    position: absolute;
+    top: 50px;
+    height: 600px;
+    width: 650px;
+    background-color: #ff7b01;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.box-2 {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    height: 600px;
+    width: 650px;
+    background-color: #2f3743;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.panel-body {
+    width: 900px;
+}
+
+.btn-submit {
+    max-width: 100%;
+    padding: 8px 16px;
+}
