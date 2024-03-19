@@ -45,25 +45,28 @@
                     <div class="form-publishoffers-items">
                         <form action="sender.php" class="form-publishoffers-labels" method="POST">
                             <h1 class="text-white mt-3 m-3">Publier un trajet</h1>
-                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                <option selected>Sélectionner une destination...</option>
-                                <option value="1">IFA</option>
-                                <option value="2">MNS</option>
-                            </select>
+                            <div class="form-group">
+                                <label for="route_startadress">Adresse de départ</label>
+                                <input type="text" class="form-control form-control-lg" id="route_startadress"
+                                placeholder="Adresse de départ">
+                            </div>
+                            <div class="form-group">
+                                <label for="route_endadress">Adresse d'arrivée</label>
+                                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="route_endadress">
+                                    <option selected>Sélectionner une adresse d'arrivée...</option>
+                                    <option value="1">IFA</option>
+                                    <option value="2">MNS</option>
+                                </select>
+                            </div>
                             <div class="form-group">
                                 <label for="route_departuretime">Date de trajet</label>
-                                <input type="text" class="form-control form-control-lg" id="route_departuretime"
+                                <input type="datetime-local" class="form-control form-control-lg" id="route_departuretime"
                                 placeholder="Date de trajet">
                             </div>
                             <div class="form-group">
                                 <label for="car_numberofplace">Nombre de places</label>
                                 <input type="text" class="form-control form-control-lg" id="car_numberofplace"
                                 placeholder="Nombre de places">
-                            </div>
-                            <div class="form-group">
-                                <label for="route_startadress">Départ</label>
-                                <input type="text" class="form-control form-control-lg" id="route_start_adress"
-                                placeholder="Départ">
                             </div>
                             <div class="form-group mt-3 col">
                                 <button type="submit" class="btn btn-secondary mt-3 col-12 btn-submit">Publier le trajet</button>
