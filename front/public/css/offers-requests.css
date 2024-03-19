@@ -24,6 +24,11 @@
 	font-size: 1.25rem;
 }
 
+.page-description-block {
+	background-color: #1B98E0;
+	height: 140px;
+}
+
 .char-space {
 	width: 2px;
 }
