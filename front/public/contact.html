@@ -39,35 +39,25 @@
         </nav>
         
         <!-- Content -->
-        <div class="background-squares">
-            <div class="box-1">
-                <h1 class="text-white mt-3 m-3">CarPool</h1>
-                <small class="align-bottom text-white position-absolute bottom-0 p-lg-3">&copy; Formulaire de contact destiné à l'équipe CarPool</small>
-            </div>
-            <div class="box-2"></div>
-        </div>
-        <div class="row">
-            <div class="d-flex justify-content-center align-items-center text-white mt-5">
-                <div class="panel panel-primary mt-5">
-                    <div class="panel-body">
-                        <form action="POST" class="text-center">
+        <div class="form-contact">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center text-white">
+                    <div class="form-contact-items">
+                        <form action="sender.php" class="form-contact-labels" method="POST">
+                            <h1 class="text-white mt-3 m-3">Formulaire de contact</h1>
                             <div class="form-group">
-                                <label for="firstName"></label>
-                                <input type="text" class="form-control form-control-lg" id="firstName"
-                                    placeholder="Nom de famille">
+                                <label for="user_id">Identifiant utilisateur</label>
+                                <input type="text" class="form-control form-control-lg" id="user_id"
+                                    placeholder="Identifiant utilisateur">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_title">Objet de votre message</label>
+                                <input type="text" class="form-control form-control-lg" id="contact_title"
+                                    placeholder="Objet de votre message">
                             </div>
                             <div class="form-group mt-3">
-                                <label for="lastName"></label>
-                                <input type="text" class="form-control form-control-lg" id="lastName"
-                                    placeholder="Prénom">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="email"></label>
-                                <input type="text" class="form-control form-control-lg" id="email" placeholder="Email">
-                            </div>
-                            <div class="form-group mt-3">
-                                <label for="Message"></label>
-                                <textarea  class="form-control form-control-lg" name="message" id="message" rows="4" placeholder="Entrez votre message"></textarea>
+                                <label for="contact_message">Entrez votre message</label>
+                                <textarea  class="form-control form-control-lg" name="contact_message" id="contact_message" rows="4" placeholder="Entrez votre message"></textarea>
                             </div>
                             <div class="form-group mt-3 col">
                                 <button type="submit" class="btn btn-secondary mt-3 col-12 btn-submit">Envoyer le message</button>
