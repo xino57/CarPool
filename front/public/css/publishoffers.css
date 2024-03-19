@@ -1,0 +1,19 @@
+.form-publishoffers {
+    margin-top: 20px;
+    background-color: #ff7b01;
+    padding-bottom: 25px;
+    border-radius: 0.5rem;
+}
+
+.form-publishoffers-labels {
+    font-size: 20px;
+}
+
+.form-publishoffers-items {
+    width: 900px;
+}
+
+.btn-submit {
+    max-width: 100%;
+    padding: 8px 16px;
+}
