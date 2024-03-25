@@ -15,29 +15,35 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <nav class="header">
-            <div class="row align-items-center">
-                <div class="col-md-2 col-sm-4">
-                    <img src="/image/logo_Carpool.png" alt="logo_carpool" class="imageLogo img-fluid" />
-                </div>
-                <div class="col-md-8 col-sm-12 text-center">
-                    <div class="button-center text-center center-button">
-                        <button class="btn btn-primary m-4 btn-lg btn-sm">
-                            <strong>Rechercher des offres</strong>
-                        </button>
-                        <button class="btn btn-primary btn-lg btn-sm">
-                            <strong>Rechercher des demandes</strong>
-                        </button>
-                    </div>
-                </div>
 
-                <div class="col-md-2 col-sm-4 text-center d-md-block d-sm- none">
-                    <div class="row justify-content-center align-items-center signUp">
-                        <img src="/icon/person-circle.svg" alt="logoSignUp" class="iconSignUp img-fluid" />
-                        <button class="btn btn-primary btn-rounded m-3 btn-lg signUp-button">
-                            <strong>Sign up</strong>
-                        </button>
-                    </div>
+        <nav class="navbar navbar-expand-lg bg-custom-blue navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/image/logo_Carpool.png" alt="logo_Carpool"
+                        class="imageLogo img-fluid"></a>
+                <button class="navbar-toggler custom-toggler navbar-toggler-color" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-toggler-color"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><strong
+                                    class="text-white text-underline">Accueil</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><strong
+                                    class="text-white">Rechercher Des Offres</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><strong
+                                    class="text-white">Rechercher Des Demandes</strong></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <button class="btn btn-primary signUp" type="submit">Sign Up</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -163,6 +169,7 @@
             </footer>
         </div>
     </div>
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
