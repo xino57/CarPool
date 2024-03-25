@@ -1,0 +1,16 @@
+.card {
+	background-color: #13293D;
+	border-color: #ffffff;
+	color: white;
+	min-height: 180px;
+}
+
+.card-header {
+	background-color: #13293D;
+	border-color: white;
+	color: white;
+}
+
+.col {
+	color: white;
+}
