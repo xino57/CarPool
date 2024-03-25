@@ -1,62 +1,26 @@
 /*....................................................................header....................................................................*/
 
-/* fond body*/
-body{
+body {
     background-color: #13293D;
     margin: 30px;
 }
 
-/* Button center */
-.button-center{
-    display: flex;
-    display: row;
-    justify-content: center;
-    align-items: center;
+.center-button button {
+    padding: 35px 70px;
 }
 
-.button-offer{
-    height: 100px;
-    width: 400px;
-    font-weight: bold;
-}
-
-.button-request{
-    height: 100px;
-    width: 400px;
-    font-weight: bold;
-}
-/* Image */
-.imageLogo{
-    height: 200px;
-    width: 150px;
-}
-
-/* Align button Sign Up */
-.connect{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* icon */
-.imageSignUp{
-    color: white;
+.iconSignUp {
     width: 150px;
     height: 150px;
 }
 
-/* Button SignUp */
-.button-SignUp{
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    font-size: 20px;
-    width: 110px;
+.signUp button {
+    padding: 14px 14px;
 }
 
 /*....................................................................Content....................................................................*/
 
-.content{
+.content {
     margin-top: 10px;
     background-image: url('/image/Front-page-image.png');
     background-size: 60% auto;
@@ -67,7 +31,7 @@ body{
     height: 360px;
 }
 
-.iconSearch{
+.iconSearch {
     height: 100px;
     width: 50px;
     margin-right: 20px;
@@ -81,28 +45,31 @@ body{
     color: white;
 }
 
-.interiorContent h1{
+.interiorContent h1 {
     font-weight: bold;
     font-size: 30px;
 }
 
-.scope{
+.scope {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-.scope h3{
+.scope h3 {
     margin: 40px;
 }
 
-.iconGeo, .iconCalendar, .personcircle, .point {
-    height:30px;
+.iconGeo,
+.iconCalendar,
+.personcircle,
+.point {
+    height: 30px;
     width: auto;
 }
 
-.scope .button-search{
+.scope .button-search {
     height: 50px;
     width: 150px;
     font-size: 24px;
@@ -110,25 +77,29 @@ body{
 
 /*....................................................................Bloc De Réassurance....................................................................*/
 
-.iconPersonCheck, .iconEuro, .iconCar{
+.iconPersonCheck,
+.iconEuro,
+.iconCar {
     height: 30px;
     width: 30px;
 }
 
-.container p{
+.container p {
     height: 72px;
     margin: 0;
 }
 
 /*....................................................................Footer....................................................................*/
 
-.logoInstagram, .logoFacebook, .logoLinkedin{
+.logoInstagram,
+.logoFacebook,
+.logoLinkedin {
     height: 30px;
     width: 30px;
     margin: 5px;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: space-between;
     align-items: center;

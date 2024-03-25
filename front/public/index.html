@@ -13,27 +13,30 @@
 </head>
 
 <body>
-<script src="/js/main.js"></script>
     <div class="container">
+        <!-- Header -->
         <nav class="header">
             <div class="row align-items-center">
-                <div class="col-2">
-                    <img src="/image/logo_Carpool.png" alt="logo_carpool" class="imageLogo" />
+                <div class="col-md-2 col-sm-4">
+                    <img src="/image/logo_Carpool.png" alt="logo_carpool" class="imageLogo img-fluid" />
                 </div>
-                <div class="col-8 text-center">
-                    <div class="button-center text-center">
-                        <button class="button-offer btn btn-primary btn-lg m-2">
-                            Rechercher des offres
+                <div class="col-md-8 col-sm-12 text-center">
+                    <div class="button-center text-center center-button">
+                        <button class="btn btn-primary m-4 btn-lg btn-sm">
+                            <strong>Rechercher des offres</strong>
                         </button>
-                        <button class="button-request btn btn-primary btn-lg m-2">
-                            Rechercher des demandes
+                        <button class="btn btn-primary btn-lg btn-sm">
+                            <strong>Rechercher des demandes</strong>
                         </button>
                     </div>
                 </div>
-                <div class="col-2 text-center">
-                    <div class="row connect">
-                        <img src="/icon/person-circle.svg" alt="logoSignUp" class="imageSignUp" />
-                        <button id="signupButton" class="button-SignUp btn btn-primary">Sign up</button>
+
+                <div class="col-md-2 col-sm-4 text-center d-md-block d-sm- none">
+                    <div class="row justify-content-center align-items-center signUp">
+                        <img src="/icon/person-circle.svg" alt="logoSignUp" class="iconSignUp img-fluid" />
+                        <button class="btn btn-primary btn-rounded m-3 btn-lg signUp-button">
+                            <strong>Sign up</strong>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -43,24 +46,24 @@
         <div class="content"></div>
         <div class="interiorContent">
             <h1>
-                <img src="/icon/search.svg" alt="IconSearch" class="iconSearch" /> Où
+                <img src="/icon/search.svg" alt="IconSearch" class="iconSearch img-fluid" /> Où
                 allez-vous ?
             </h1>
             <div class="scope">
                 <h3>
-                    <img src="/icon/geo-alt.svg" alt="IconSearch" class="iconGeo" class="iconGeo" />
+                    <img src="/icon/geo-alt.svg" alt="IconSearch" class="iconGeo" class="iconGeo img-fluid" />
                     Destination
                 </h3>
                 <h3>
-                    <img src="/icon/calendar-check.svg" alt="IconCalendar" class="iconCalendar" />
+                    <img src="/icon/calendar-check.svg" alt="IconCalendar" class="iconCalendar img-fluid" />
                     Date de trajet
                 </h3>
                 <h3>
-                    <img src="/icon/person.svg" alt="PersonCircle" class="personcircle" />
+                    <img src="/icon/person.svg" alt="PersonCircle" class="personcircle img-fluid" />
                     Nombre de places
                 </h3>
                 <h3>
-                    <img src="/icon/point.svg" alt="IconPoint" class="point" /> Départ
+                    <img src="/icon/point.svg" alt="IconPoint" class="point img-fluid" /> Départ
                 </h3>
                 <button class="button-search btn btn-primary">Rechercher</button>
             </div>
