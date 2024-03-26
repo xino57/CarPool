@@ -22,60 +22,54 @@ body {
 
 /*....................................................................Content....................................................................*/
 
-.content {
+.image {
     margin-top: 10px;
     background-image: url('/image/Front-page-image.png');
     background-size: 60% auto;
     background-repeat: no-repeat;
     background-position: center top;
-    height: 853px;
+    height: 350px;
     background-color: #247BA0;
-    height: 360px;
 }
 
 .iconSearch {
-    height: 100px;
+    height: auto;
     width: 50px;
     margin-right: 20px;
 }
 
-.interiorContent {
+.content {
     position: relative;
-    top: 30%;
     background-color: #006494;
-    padding: 10px;
+    /* height: 200px; */
     color: white;
 }
 
-.interiorContent h1 {
-    font-weight: bold;
-    font-size: 30px;
+.icon {
+    height: auto;
+    width: 20px;
 }
 
-.scope {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
+.table {
+    overflow-x: auto;
+    border-width: 20px;
 }
 
-.scope h3 {
-    margin: 40px;
-    font-size: 20px;
+.title-table {
+    margin: 0 auto;
+    width: 100%;
 }
 
-.iconGeo,
-.iconCalendar,
-.personcircle,
-.point {
-    height: 30px;
-    width: auto;
+.table tr {
+    background-color: #006494;
+    border-width: 3px;
+    color: white;
 }
 
-.scope .button-search {
-    height: 50px;
-    width: 150px;
-    font-size: 24px;
+.table td {
+    border-width: 3px;
+    padding: 8px;
 }
 
 /*....................................................................Bloc De Réassurance....................................................................*/

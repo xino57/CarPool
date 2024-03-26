@@ -29,53 +29,70 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><strong
-                                    class="text-white text-underline">Accueil</strong></a>
+                            <a class="nav-link active" aria-current="page" href="#"><button
+                                    class="btn btn-success"><strong>Accueil</strong></button></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><strong
-                                    class="text-white">Rechercher Des Offres</strong></a>
+                            <a class="nav-link active" aria-current="page" href="#"><button
+                                    class="btn btn-success"><strong>Rechercher des offres</strong></button></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><strong
-                                    class="text-white">Rechercher Des Demandes</strong></a>
+                            <a class="nav-link active" aria-current="page" href="#"><button
+                                    class="btn btn-success"><strong>Rechercher des demandes</strong></button></a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <button class="btn btn-primary signUp" type="submit">Sign Up</button>
+                        <button class="btn btn-primary signUp" type="submit">Connexion</button>
                     </form>
                 </div>
             </div>
         </nav>
 
         <!-- Content -->
-        <div class="content"></div>
-        <div class="interiorContent">
-            <h1>
-                <img src="/icon/search.svg" alt="IconSearch" class="iconSearch img-fluid" /> Où
-                allez-vous ?
-            </h1>
-            <div class="scope">
-                <h3>
-                    <img src="/icon/geo-alt.svg" alt="IconSearch" class="iconGeo" class="iconGeo img-fluid" />
-                    Destination
-                </h3>
-                <h3>
-                    <img src="/icon/calendar-check.svg" alt="IconCalendar" class="iconCalendar img-fluid" />
-                    Date de trajet
-                </h3>
-                <h3>
-                    <img src="/icon/person.svg" alt="PersonCircle" class="personcircle img-fluid" />
-                    Nombre de places
-                </h3>
-                <h3>
-                    <img src="/icon/point.svg" alt="IconPoint" class="point img-fluid" /> Départ
-                </h3>
-                <button class="button-search btn btn-primary">Rechercher</button>
+        <div class="image"></div>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                    <nav class="navbar ">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                                <img src="/icon/search.svg" alt="IconSearch" class="iconSearch" />
+                                <input class="form-control me-2" type="search" placeholder="Où allez-vous ?"
+                                    aria-label="Search">
+                                <button class="btn btn-primary" type="submit">Rechercher</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="table">
+                <table class="table-primary title-table">
+                    <thead>
+                        <tr class="icon text-center">
+                            <th>&nbsp;&nbsp;&nbsp;<img src="/icon/geo-alt.svg" alt="icon-destination">
+                                &nbsp;Destination&nbsp;&nbsp;&nbsp;</th>
+                            <th>&nbsp;&nbsp;&nbsp;<img src="/icon/calendar-check.svg" alt="icon-calendrier"> &nbsp;Date
+                                du trajet&nbsp;&nbsp;&nbsp;</th>
+                            <th>&nbsp;&nbsp;&nbsp;<img src="/icon/person-check.svg" alt="icon-user-check"> &nbsp;Nombre
+                                de places&nbsp;&nbsp;&nbsp;</th>
+                            <th>&nbsp;&nbsp;&nbsp;<img src="/icon/point.svg" alt="icon-point-depart">
+                                &nbsp;Départ&nbsp;&nbsp;&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <td>Metz</td>
+                            <td>20/03/2024</td>
+                            <td>2</td>
+                            <td>Thionville</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+
         <!-- Bloc de réassurance -->
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
             <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
@@ -122,6 +139,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Footer -->
         <footer class="text-white pt-1">
             <div class="row px-3 pb-4">

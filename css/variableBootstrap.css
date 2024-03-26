@@ -11,6 +11,22 @@
     border-color: var(--primary-color);
 }
 
+.btn-success {
+    background-color: #13293d;
+    border-color: #13293d;
+}
+
+.btn-success:hover {
+    background-color: #ff7b01;
+    border-color: #ff7b01;
+
+}
+
+.btn-success:hover:active {
+    background-color: #13293d;
+    border-color: #13293d;
+}
+
 .btn-secondary {
     color: #fff;
     background-color: var(--secondary-color);
@@ -34,3 +50,6 @@
     padding-bottom: 5.5rem !important;
 }
 
+.mt-5 {
+    margin-top: 10px !important;
+}
