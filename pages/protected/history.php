@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loginForm</title>
+    <meta charset="UTF-8" />
+    
+    <!-- Liens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/variableBootstrap.css" />
-    <link rel="stylesheet" href="/css/loginForm.css" />
+    <link rel="stylesheet" href="/css/variable_bootstrap.css" />
+    <link rel="stylesheet" href="/css/history.css" />
+    <title>CarPool</title>
 </head>
 
 <body>
-    <!-- Header -->
     <div class="container">
+        <!-- Header -->
         <nav class="header">
             <div class="row align-items-center">
                 <div class="col-2">
@@ -37,47 +39,86 @@
                 </div>
             </div>
         </nav>
-
-        <!-- LoginForm -->
-        <div class="form-login">
-            <div class="row">
-                <div class="d-flex justify-content-center align-items-center text-white">
-                    <div class="form-login-items">
-                        <form action="sender.php" class="form-login-labels" method="POST">
-                            <h1 class="text-white mt-3 m-3">Connexion au compte</h1>
-                            <div class="form-group">
-                                <label for="user_mail">Adresse mail</label>
-                                <input type="text" class="form-control form-control-lg" id="user_mail"
-                                    placeholder="Adresse mail">
-                            </div>
-                            <div class="form-group">
-                                <label for="user_password">Mot de passe</label>
-                                <input type="text" class="form-control form-control-lg" id="user_password"
-                                    placeholder="Mot de passe">
-                            </div>
-                            <div class="mb-3">
-                                <div class="form-check mt-3">
-                                    <input class="form-check-input" type="checkbox" id="keep_connected">
-                                    <label class="form-check-label" for="keep_connected">
-                                        <h5>Se souvenir de moi</h5>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group mt-3 col">
-                                <button type="submit" class="btn btn-secondary mt-3 col-12 btn-submit">Connexion</button>
-                            </div>
-                            <div class="col-12 text-center mt-3">
-                                <a href="#" class="text-white">Vous n'avez pas de compte ? Créez en un !</a>
-                            </div>
-                        </form>
-                    </div>
+        
+        <!-- Content -->
+        <div class="row page-description-block">	
+            <h2 class="text-white text-center d-flex align-items-center justify-content-center">Historique de covoiturage</h2>
+        </div>
+        <div class="row history-elems justify-content-md-center">
+            
+            <div class="col-xl-2 col-md-6">
+                <div class="history-common-elem d-flex align-items-center justify-content-center rounded">
+                    <img src="/icon/geo-alt.svg" alt="IconSearch" class="iconGeo" class="iconGeo"/><div class="char-space"></div>
+                    <span>Destination</span>
+                </div>
+            </div>
+            
+            <div class="col-xl-2 col-md-6">
+                <div class="history-common-elem d-flex align-items-center justify-content-center rounded">
+                    <img src="/icon/calendar-check.svg" alt="IconCalendar" class="iconCalendar"/><div class="char-space"></div>
+                    <span>Date de trajet</span>
+                </div>
+            </div>
+            
+            <div class="col-xl-2 col-md-6">
+                <div class="history-common-elem d-flex align-items-center justify-content-center rounded">
+                    <img src="/icon/person.svg" alt="PersonCircle" class="personcircle"/><div class="char-space"></div>
+                    <span>Nombre de places</span>
+                </div>
+            </div>
+            
+            <div class="col-xl-2 col-md-6">
+                <div class="history-common-elem d-flex align-items-center justify-content-center rounded">
+                    <img src="/icon/point.svg" alt="IconPoint" class="point"/><div class="char-space"></div>
+                    <span>Départ</span>
+                </div>
+            </div>
+            
+            <div class="col-xl-2 col-md-6">
+                <div class="history-cancel-action-elem d-flex align-items-center justify-content-center rounded">
+                    <span>Annuler!</span>
                 </div>
             </div>
         </div>
-
+        
+        <div class="row history-elems justify-content-md-center">
+            <div class="col-xl-2 col-md-6">
+                <div class="history-common-elem d-flex align-items-center justify-content-center rounded">
+                    <img src="/icon/geo-alt.svg" alt="IconSearch" class="iconGeo" class="iconGeo"/><div class="char-space"></div>
+                    <span>Destination</span>
+                </div>
+            </div>
+            
+            <div class="col-xl-2 col-md-6">
+                <div class="history-common-elem d-flex align-items-center justify-content-center rounded">
+                    <img src="/icon/calendar-check.svg" alt="IconCalendar" class="iconCalendar"/><div class="char-space"></div>
+                    <span>Date de trajet</span>
+                </div>
+            </div>
+            
+            <div class="col-xl-2 col-md-6">
+                <div class="history-common-elem d-flex align-items-center justify-content-center rounded">
+                    <img src="/icon/person.svg" alt="PersonCircle" class="personcircle"/><div class="char-space"></div>
+                    <span>Nombre de places</span>
+                </div>
+            </div>
+            
+            <div class="col-xl-2 col-md-6">
+                <div class="history-common-elem d-flex align-items-center justify-content-center rounded">
+                    <img src="/icon/point.svg" alt="IconPoint" class="point"/><div class="char-space"></div>
+                    <span>Départ</span>
+                </div>
+            </div>
+            
+            <div class="col-xl-2 col-md-6">
+                <div class="history-comment-action-elem d-flex align-items-center justify-content-center rounded">
+                    <span>Commenter!</span>
+                </div>
+            </div>
+        </div>
+        
         <!-- Footer -->
-        <footer class="text-white mt-5">
-            <hr>
+        <footer class="text-white pt-1">
             <div class="row px-3 pb-4">
                 <div class="col-md-3">
                     <h5 class="mb-2 font-weight-bold">CarPool</h5>
@@ -131,7 +172,6 @@
             </div>
         </footer>
     </div>
-    <script src="js/main.js"></script>
 </body>
 
 </html>

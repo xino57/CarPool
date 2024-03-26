@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/variableBootstrap.css" />
-    <link rel="stylesheet" href="css/offers-requests.css" />
+    <link rel="stylesheet" href="/css/variable_bootstrap.css" />
+    <link rel="stylesheet" href="/css/offers_requests.css" />
     <title>CarPool</title>
 </head>
 
