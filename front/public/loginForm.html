@@ -7,8 +7,8 @@
     <title>loginForm</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/loginFom.css" />
     <link rel="stylesheet" href="/css/variableBootstrap.css" />
+    <link rel="stylesheet" href="/css/loginForm.css" />
 </head>
 
 <body>
@@ -39,37 +39,40 @@
         </nav>
 
         <!-- LoginForm -->
-        <div class="formBackground text-white rounded-5 mt-5 d-flex flex-column align-items-center p-5">
-            <div class="titre text-center mt-3">
-                <h2>Connexion au compte CarPool</h2>
-                <p>Formulaire de connexion</p>
-            </div>
-            <div class="circle-right"></div>
-            <div class="circle-left"></div>
-            <form action="POST" class="form">
-                <div class="mb-3">
-                    <label for="Email" class="form-label py-1">Email</label>
-                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                    <div class="form-check mt-3">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            <h5>Se souvenir de moi</h5>
-                        </label>
+        <div class="form-login">
+            <div class="row">
+                <div class="d-flex justify-content-center align-items-center text-white">
+                    <div class="form-login-items">
+                        <form action="sender.php" class="form-login-labels" method="POST">
+                            <h1 class="text-white mt-3 m-3">Connexion au compte</h1>
+                            <div class="form-group">
+                                <label for="user_mail">Adresse mail</label>
+                                <input type="text" class="form-control form-control-lg" id="user_mail"
+                                    placeholder="Adresse mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_password">Mot de passe</label>
+                                <input type="text" class="form-control form-control-lg" id="user_password"
+                                    placeholder="Mot de passe">
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" id="keep_connected">
+                                    <label class="form-check-label" for="keep_connected">
+                                        <h5>Se souvenir de moi</h5>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3 col">
+                                <button type="submit" class="btn btn-secondary mt-3 col-12 btn-submit">Connexion</button>
+                            </div>
+                            <div class="col-12 text-center mt-3">
+                                <a href="#" class="text-white">Vous n'avez pas de compte ? Créez en un !</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-12 text-center mt-4">
-                    <button type="submit" class="btn btn-primary buttonSignup px-5 py-2">
-                        <h5>Connexion</h5>
-                    </button>
-                </div>
-                <div class="col-12 text-center mt-3">
-                    <a href="#" class="text-white">Vous n'avez pas de compte ? Créez en un !</a>
-                </div>
-            </form>
+            </div>
         </div>
 
         <!-- Footer -->
