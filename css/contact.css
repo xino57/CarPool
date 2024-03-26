@@ -1,6 +1,6 @@
 .form-contact {
     margin-top: 20px;
-    background-color: #ff7b01;
+    background-color: #247BA0;
     padding-bottom: 25px;
     border-radius: 0.5rem;
 }
@@ -16,4 +16,10 @@
 .btn-submit {
     max-width: 100%;
     padding: 8px 16px;
+    background-color: #ff7b01;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.form-contact .row h1 {
+    font-family: "Libre Baskerville", serif;
 }

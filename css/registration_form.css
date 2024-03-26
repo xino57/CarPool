@@ -12,26 +12,6 @@
   z-index: -1;
 }
 
-.box-1 {
-  position: absolute;
-  top: 50px;
-  height: 600px;
-  width: 650px;
-  background-color: #ff7b01;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-}
-
-.box-2 {
-  position: absolute;
-  top: 50px;
-  right: 10px;
-  height: 600px;
-  width: 650px;
-  background-color: #2f3743;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
 
 .panel-body {
   width: 900px;
@@ -39,7 +19,7 @@
 
 .form-registration {
   margin-top: 20px;
-  background-color: #ff7b01;
+  background-color: #247BA0;
   padding-bottom: 25px;
   border-radius: 0.5rem;
 }
@@ -55,4 +35,10 @@
 .btn-submit {
   max-width: 100%;
   padding: 8px 16px;
+  background-color: #ff7b01;
+  font-family: "Cormorant Garamond", serif;
+}
+
+h1{
+  font-family: "Libre Baskerville", serif;
 }

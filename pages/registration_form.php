@@ -7,9 +7,8 @@
     <title>Registration Page</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/registration_form.css" />
     <link rel="stylesheet" href="/css/variable_bootstrap.css" />
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/registration_form.css" />
 </head>
 
 <body>
@@ -26,7 +25,7 @@
                     <div class="d-flex justify-content-center align-items-center text-white">
                         <div class="form-registration-items">
                             <form action="sender.php" class="form-registration-labels" method="POST">
-                                <h1 class="text-white mt-3 m-3">Créer un compte</h1>
+                                <h1 class="text-center text-white mt-3 m-3">Créer un compte</h1>
                                 <div class="form-group">
                                     <label for="user_name">Nom de famille</label>
                                     <input type="text" class="form-control form-control-lg" id="user_name"
@@ -69,4 +68,5 @@
     </div>
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

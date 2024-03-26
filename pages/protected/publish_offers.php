@@ -7,8 +7,8 @@
     <title>Publier un trajet</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/publish_offers.css" />
     <link rel="stylesheet" href="/css/variable_bootstrap.css" />
+    <link rel="stylesheet" href="/css/publish_offers.css" />
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                 <div class="d-flex justify-content-center align-items-center text-white">
                     <div class="form-publishoffers-items">
                         <form action="sender.php" class="form-publishoffers-labels" method="POST">
-                            <h1 class="text-white mt-3 m-3">Publier un trajet</h1>
+                            <h1 class="text-center text-white mt-3 m-3">Publier un trajet</h1>
                             <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                                 <option selected>Sélectionner une destination...</option>
                                 <option value="1">IFA</option>

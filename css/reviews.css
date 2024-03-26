@@ -1,4 +1,27 @@
-
 .star.filled img {
     content: url('/icon/star_filled.svg');
+}
+
+.reviews {
+    background-color: #247BA0;
+    border-radius: 0.5rem;
+    padding: 20px;
+}
+
+.btn-danger {
+    width: 200px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.btn-primary {
+    width: 200px;
+    font-family: "Cormorant Garamond", serif;
+}
+
+h1 {
+    font-family: "Libre Baskerville", serif;
+}
+
+h5 {
+    font-family: "Domine", serif;
 }

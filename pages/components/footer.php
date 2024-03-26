@@ -1,5 +1,5 @@
 <?php
-$footer='<footer class="text-white pt-1">
+$footer='<footer class="text-white pt-1 mt-5">
 <div class="row px-3 pb-4">
     <div class="col-md-3">
         <h5 class="mb-2 font-weight-bold">CarPool</h5>
@@ -9,7 +9,7 @@ $footer='<footer class="text-white pt-1">
         <a href="#" class="text-white d-block mb-1">Espace presse</a>
     </div>
     <div class="col-md-3">
-        <h5 class="mb-2 font-weight-bold">Nos services</h5>
+        <h5 class="mb-2 font-weight-bold">Nos Services</h5>
         <a href="#" class="text-white d-block mb-1">Publication de la demande</a>
         <a href="#" class="text-white d-block mb-1">Réservation des places</a>
         <a href="#" class="text-white d-block mb-1">Système de Notation</a>
@@ -25,7 +25,7 @@ $footer='<footer class="text-white pt-1">
         <a href="#" class="text-white d-block mb-1">Devenir Franchisé</a>
     </div>
     <div class="col-md-3">
-        <h5 class="mb-2 font-weight-bold">Aide en ligne</h5>
+        <h5 class="mb-2 font-weight-bold">Aide En Ligne</h5>
         <a href="#" class="text-white d-block mb-1">FAQ</a>
         <a href="#" class="text-white d-block mb-1">Contacts</a>
         <a href="#" class="text-white d-block mb-1">Votre avis</a>
