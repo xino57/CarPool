@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page</title>
+    <title>loginForm</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/registrationForm.css" />
-    <link rel="stylesheet" href="/css/variableBootstrap.css" />
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="/css/variable_bootstrap.css" />
+    <link rel="stylesheet" href="/css/login_form.css" />
 </head>
 
 <body>
+    <!-- Header -->
     <div class="container">
-        <!-- nav -->
         <nav class="header">
             <div class="row align-items-center">
                 <div class="col-2">
@@ -39,24 +38,13 @@
             </div>
         </nav>
 
-        <!-- Content -->
-
-        <div class="form-registration">
+        <!-- LoginForm -->
+        <div class="form-login">
             <div class="row">
                 <div class="d-flex justify-content-center align-items-center text-white">
-                    <div class="form-registration-items">
-                        <form action="sender.php" class="form-registration-labels" method="POST">
-                            <h1 class="text-white mt-3 m-3">Créer un compte</h1>
-                            <div class="form-group">
-                                <label for="user_name">Nom de famille</label>
-                                <input type="text" class="form-control form-control-lg" id="user_name"
-                                    placeholder="Nom de famille">
-                            </div>
-                            <div class="form-group">
-                                <label for="user_firstname">Prénom</label>
-                                <input type="text" class="form-control form-control-lg" id="user_firstname"
-                                    placeholder="Prénom">
-                            </div>
+                    <div class="form-login-items">
+                        <form action="sender.php" class="form-login-labels" method="POST">
+                            <h1 class="text-white mt-3 m-3">Connexion au compte</h1>
                             <div class="form-group">
                                 <label for="user_mail">Adresse mail</label>
                                 <input type="text" class="form-control form-control-lg" id="user_mail"
@@ -64,16 +52,22 @@
                             </div>
                             <div class="form-group">
                                 <label for="user_password">Mot de passe</label>
-                                <input type="password" class="form-control form-control-lg" id="user_password"
+                                <input type="text" class="form-control form-control-lg" id="user_password"
                                     placeholder="Mot de passe">
                             </div>
-                            <div class="form-group">
-                                <label for="user_password_confirm">Confirmer le mot de passe</label>
-                                <input type="password" class="form-control form-control-lg" id="user_password_confirm"
-                                    placeholder="Confirmer le mot de passe">
+                            <div class="mb-3">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="checkbox" id="keep_connected">
+                                    <label class="form-check-label" for="keep_connected">
+                                        <h5>Se souvenir de moi</h5>
+                                    </label>
+                                </div>
                             </div>
                             <div class="form-group mt-3 col">
-                                <button type="submit" class="btn btn-secondary mt-3 col-12 btn-submit">Envoyer le message</button>
+                                <button type="submit" class="btn btn-secondary mt-3 col-12 btn-submit">Connexion</button>
+                            </div>
+                            <div class="col-12 text-center mt-3">
+                                <a href="#" class="text-white">Vous n'avez pas de compte ? Créez en un !</a>
                             </div>
                         </form>
                     </div>
@@ -82,7 +76,8 @@
         </div>
 
         <!-- Footer -->
-        <footer class="text-white m-5 pb-4 pt-5">
+        <footer class="text-white mt-5">
+            <hr>
             <div class="row px-3 pb-4">
                 <div class="col-md-3">
                     <h5 class="mb-2 font-weight-bold">CarPool</h5>
@@ -136,7 +131,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>

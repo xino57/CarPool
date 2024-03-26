@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publier un trajet</title>
+    <title>Registration Page</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="css/publishoffers.css" />
-    <link rel="stylesheet" href="/css/variableBootstrap.css" />
+    <link rel="stylesheet" href="/css/registration_form.css" />
+    <link rel="stylesheet" href="/css/variable_bootstrap.css" />
+    <link rel="stylesheet" href="/css/contact.css">
 </head>
 
 <body>
@@ -37,43 +38,49 @@
                 </div>
             </div>
         </nav>
-        
+
         <!-- Content -->
-        <div class="form-publishoffers">
+
+        <div class="form-registration">
             <div class="row">
                 <div class="d-flex justify-content-center align-items-center text-white">
-                    <div class="form-publishoffers-items">
-                        <form action="sender.php" class="form-publishoffers-labels" method="POST">
-                            <h1 class="text-white mt-3 m-3">Publier un trajet</h1>
-                            <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                                <option selected>Sélectionner une destination...</option>
-                                <option value="1">IFA</option>
-                                <option value="2">MNS</option>
-                            </select>
+                    <div class="form-registration-items">
+                        <form action="sender.php" class="form-registration-labels" method="POST">
+                            <h1 class="text-white mt-3 m-3">Créer un compte</h1>
                             <div class="form-group">
-                                <label for="route_departuretime">Date de trajet</label>
-                                <input type="text" class="form-control form-control-lg" id="route_departuretime"
-                                placeholder="Date de trajet">
+                                <label for="user_name">Nom de famille</label>
+                                <input type="text" class="form-control form-control-lg" id="user_name"
+                                    placeholder="Nom de famille">
                             </div>
                             <div class="form-group">
-                                <label for="car_numberofplace">Nombre de places</label>
-                                <input type="text" class="form-control form-control-lg" id="car_numberofplace"
-                                placeholder="Nombre de places">
+                                <label for="user_firstname">Prénom</label>
+                                <input type="text" class="form-control form-control-lg" id="user_firstname"
+                                    placeholder="Prénom">
                             </div>
                             <div class="form-group">
-                                <label for="route_startadress">Départ</label>
-                                <input type="text" class="form-control form-control-lg" id="route_start_adress"
-                                placeholder="Départ">
+                                <label for="user_mail">Adresse mail</label>
+                                <input type="text" class="form-control form-control-lg" id="user_mail"
+                                    placeholder="Adresse mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_password">Mot de passe</label>
+                                <input type="password" class="form-control form-control-lg" id="user_password"
+                                    placeholder="Mot de passe">
+                            </div>
+                            <div class="form-group">
+                                <label for="user_password_confirm">Confirmer le mot de passe</label>
+                                <input type="password" class="form-control form-control-lg" id="user_password_confirm"
+                                    placeholder="Confirmer le mot de passe">
                             </div>
                             <div class="form-group mt-3 col">
-                                <button type="submit" class="btn btn-secondary mt-3 col-12 btn-submit">Publier le trajet</button>
+                                <button type="submit" class="btn btn-secondary mt-3 col-12 btn-submit">Envoyer le message</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Footer -->
         <footer class="text-white m-5 pb-4 pt-5">
             <div class="row px-3 pb-4">
@@ -129,7 +136,7 @@
             </div>
         </footer>
     </div>
-    
+
 </body>
 
 </html>
