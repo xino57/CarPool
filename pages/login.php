@@ -91,7 +91,7 @@
                                     class="btn btn-secondary mt-3 col-12 btn-submit"><h5>Connexion</h5></button>
                             </div>
                             <div class="col-12 text-center mt-3">
-                                <a href="#" class="text-white">Vous n'avez pas de compte ? Créez en un !</a>
+                                <a href="/pages/register.php" class="text-white">Vous n'avez pas de compte ? Créez en un !</a>
                             </div>
                         </form>
                     </div>
