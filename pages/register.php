@@ -5,32 +5,34 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/pages/protected/include/connect.php";
 $error_message = "";
 
 if (isset ($_POST['submit'])) {
-    if (isset ($_POST['user_name']) && isset ($_POST['user_firstname']) && isset ($_POST['user_mail']) && isset ($_POST['user_password']) && isset ($_POST['user_phone']) && isset ($_POST['user_password_confirm'])) {
-        if ($_POST['user_name'] != "" && $_POST['user_firstname'] != "" && $_POST['user_mail'] != "" && $_POST['user_password'] != "" && $_POST['user_phone'] != "" && $_POST['user_password_confirm'] != "") {
+    if (isset ($_POST['user_name']) && isset ($_POST['user_firstname']) && isset ($_POST['user_mail']) && isset ($_POST['user_birthdate']) && isset ($_POST['user_password']) && isset ($_POST['user_phone']) && isset ($_POST['user_password_confirm'])) {
+        if ($_POST['user_name'] != "" && $_POST['user_firstname'] != "" && $_POST['user_mail'] != "" && $_POST['user_password'] != "" && $_POST['user_birthdate'] != "" && $_POST['user_phone'] != "" && $_POST['user_password_confirm'] != "") {
 
             $user_name = htmlspecialchars($_POST['user_name']);
             $user_firstname = htmlspecialchars($_POST['user_firstname']);
+            $user_birthdate = htmlspecialchars($_POST['user_birthdate']);
             $user_mail = htmlspecialchars($_POST['user_mail']);
             $user_phone = htmlspecialchars($_POST['user_phone']);
             $user_password = htmlspecialchars($_POST['user_password']);
             $user_password_confirm = htmlspecialchars($_POST['user_password_confirm']);
 
 
-            if(false !== filter_var($user_mail, FILTER_VALIDATE_EMAIL)){
-                if(preg_match('/^[0-9]{10}+$/', $user_phone)) {
+            if (false !== filter_var($user_mail, FILTER_VALIDATE_EMAIL)) {
+                if (preg_match('/^[0-9]{10}+$/', $user_phone)) {
 
                     if ($user_password != $user_password_confirm) {
                         $error_message = "Le mot de passe de confirmation n'est pas le même";
                     } else {
                         $user_password = password_hash($_POST['user_password'], PASSWORD_DEFAULT);
                         $user_category_id = eUserCategories::Standard;
-        
-                        $sql = "INSERT INTO table_user (user_name, user_firstname, user_mail, user_phone, user_password, user_category_id) VALUES (:user_name, :user_firstname, :user_mail, :user_phone, :user_password, :user_category_id)";
+
+                        $sql = "INSERT INTO table_user (user_name, user_firstname, user_mail, user_birthdate, user_phone, user_password, user_category_id) VALUES (:user_name, :user_firstname, :user_mail, :user_birthdate, :user_phone, :user_password, :user_category_id)";
                         $statement = $db->prepare($sql);
                         $statement->bindParam(':user_name', $user_name);
                         $statement->bindParam(':user_firstname', $user_firstname);
                         $statement->bindParam(':user_mail', $user_mail);
                         $statement->bindParam(':user_phone', $user_phone);
+                        $statement->bindParam(':user_birthdate', $user_birthdate);
                         $statement->bindParam(':user_password', $user_password);
                         $statement->bindParam(':user_category_id', $user_category_id);
                         $statement->execute();
@@ -38,10 +40,10 @@ if (isset ($_POST['submit'])) {
                         header("location: /pages/login.php");
                         exit();
                     }
-                }else{
+                } else {
                     $error_message = "Le numéro de téléphone n'est pas valide !";
                 }
-            } else{
+            } else {
                 $error_message = "L'adresse mail n'est pas valide !";
             }
         } else {
@@ -94,6 +96,11 @@ if (isset ($_POST['submit'])) {
                                     <label for="user_firstname">Prénom</label>
                                     <input type="text" class="form-control form-control-lg" id="user_firstname"
                                         placeholder="Prénom" name="user_firstname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="user_birthdate">Date de naissance</label>
+                                    <input type="date" class="form-control form-control-lg" id="user_birthdate"
+                                        placeholder="Date de naissance" name="user_birthdate">
                                 </div>
                                 <div class="form-group">
                                     <label for="user_mail">Adresse mail</label>
