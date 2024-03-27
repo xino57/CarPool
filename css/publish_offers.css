@@ -1,6 +1,6 @@
 .form-publishoffers {
     margin-top: 20px;
-    background-color: #ff7b01;
+    background-color: #247BA0;
     padding-bottom: 25px;
     border-radius: 0.5rem;
 }
@@ -14,6 +14,13 @@
 }
 
 .btn-submit {
+    background-color: #ff7b01;
     max-width: 100%;
     padding: 8px 16px;
+    font-family: "Cormorant Garamond", serif;
 }
+
+h1{
+    font-family: "Libre Baskerville", serif;
+}
+

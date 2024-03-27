@@ -10,44 +10,17 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/variable_bootstrap.css" />
     <link rel="stylesheet" href="/css/footer.css">
-    <title>CarPool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Domine:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <!-- Header -->
-        <nav class="navbar navbar-expand-lg bg-custom-blue navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/image/logo_Carpool.png" alt="logo_Carpool"
-                        class="imageLogo img-fluid"></a>
-                <button class="navbar-toggler custom-toggler navbar-toggler-color" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon navbar-toggler-color"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><button
-                                    class="btn btn-success"><strong>Accueil</strong></button></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><button
-                                    class="btn btn-success"><strong>Rechercher des offres</strong></button></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><button
-                                    class="btn btn-success"><strong>Rechercher des demandes</strong></button></a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <button class="btn btn-primary signUp" type="submit">Connexion</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
+        <?php 
+        require_once $_SERVER['DOCUMENT_ROOT']. "/pages/components/header.php";
+         ?>
         <!-- Content -->
         <div class="image"></div>
         <div class="content">
@@ -59,7 +32,7 @@
                                 <img src="/icon/search.svg" alt="IconSearch" class="iconSearch" />
                                 <input class="form-control me-2" type="search" placeholder="Où allez-vous ?"
                                     aria-label="Search">
-                                <button class="btn btn-primary" type="submit">Rechercher</button>
+                                <button class="btn btn-primary" type="submit"><h5>Rechercher</h5></button>
                             </form>
                         </div>
                     </nav>
@@ -69,14 +42,13 @@
                 <table class="table-primary title-table">
                     <thead>
                         <tr class="icon text-center">
-                            <th>&nbsp;&nbsp;&nbsp;<img src="/icon/geo-alt.svg" alt="icon-destination">
-                                &nbsp;Destination&nbsp;&nbsp;&nbsp;</th>
-                            <th>&nbsp;&nbsp;&nbsp;<img src="/icon/calendar-check.svg" alt="icon-calendrier"> &nbsp;Date
-                                du trajet&nbsp;&nbsp;&nbsp;</th>
-                            <th>&nbsp;&nbsp;&nbsp;<img src="/icon/person-check.svg" alt="icon-user-check"> &nbsp;Nombre
-                                de places&nbsp;&nbsp;&nbsp;</th>
-                            <th>&nbsp;&nbsp;&nbsp;<img src="/icon/point.svg" alt="icon-point-depart">
-                                &nbsp;Départ&nbsp;&nbsp;&nbsp;</th>
+                            <th><img src="/icon/geo-alt.svg" alt="icon-destination">&nbsp;Destination</th>
+                            <th><img src="/icon/calendar-check.svg" alt="icon-calendrier"> &nbsp;Date
+                                du trajet</th>
+                            <th><img src="/icon/person-check.svg" alt="icon-user-check"> &nbsp;Nombre
+                                de places</th>
+                            <th><img src="/icon/point.svg" alt="icon-point-depart">
+                                &nbsp;Départ</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -92,7 +64,7 @@
         </div>
 
         <!-- Bloc de réassurance -->
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center mt-5 reassurance">
             <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3">
@@ -102,8 +74,8 @@
                         </h5>
                     </div>
                     <div class="card-body">
-                        <div>
-                            Covoiturez en toute sécurité avec CarPool : membres MNS ou IFA vérifiés uniquement !
+                        <div class="txt-colonne">
+                        Covoiturez en toute sécurité avec CarPool : membres MNS ou IFA vérifiés exclusivement, garantissant votre tranquillité d'esprit !
                         </div>
                     </div>
                 </div>
@@ -117,8 +89,8 @@
                         </h5>
                     </div>
                     <div class="card-body">
-                        <div>
-                            Réduisez considérablement les frais de transport en utilisant nos services!
+                        <div class="txt-colonne">
+                        Réduisez considérablement les frais de transport en utilisant nos services, économisez et contribuez à la préservation de l'environnement !
                         </div>
                     </div>
                 </div>
@@ -132,8 +104,8 @@
                         </h5>
                     </div>
                     <div class="card-body">
-                        <div>
-                            Réduisez considérablement votre empreinte de CO2 !
+                        <div class="txt-colonne">
+                        Réduisez considérablement votre empreinte de CO2 en adoptant des comportements éco-responsables ! N'attendez plus, c'est facile !
                         </div>
                     </div>
                 </div>
@@ -141,51 +113,9 @@
         </div>
 
         <!-- Footer -->
-        <footer class="text-white pt-1">
-            <div class="row px-3 pb-4">
-                <div class="col-md-3">
-                    <h5 class="mb-2 font-weight-bold">CarPool</h5>
-                    <a href="#" class="text-white d-block mb-1">Notre Histoire</a>
-                    <a href="#" class="text-white d-block mb-1">Nos dirigeants</a>
-                    <a href="#" class="text-white d-block mb-1">Nos chiffres</a>
-                    <a href="#" class="text-white d-block mb-1">Espace presse</a>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="mb-2 font-weight-bold">Nos services</h5>
-                    <a href="#" class="text-white d-block mb-1">Publication de la demande</a>
-                    <a href="#" class="text-white d-block mb-1">Réservation des places</a>
-                    <a href="#" class="text-white d-block mb-1">Système de Notation</a>
-                    <a href="#" class="text-white d-block mb-1">Système de commentaire</a>
-                    <a href="#" class="text-white d-block mb-1">Suivi en temps réel</a>
-                    <a href="#" class="text-white d-block mb-1">Historique des trajets</a>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="mb-2 font-weight-bold">Recrutement</h5>
-                    <a href="#" class="text-white d-block mb-1">Rejoignez les équipes MNS</a>
-                    <a href="#" class="text-white d-block mb-1">Trouvez une formation</a>
-                    <a href="#" class="text-white d-block mb-1">Travailler au siège</a>
-                    <a href="#" class="text-white d-block mb-1">Devenir Franchisé</a>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="mb-2 font-weight-bold">Aide en ligne</h5>
-                    <a href="#" class="text-white d-block mb-1">FAQ</a>
-                    <a href="#" class="text-white d-block mb-1">Contacts</a>
-                    <a href="#" class="text-white d-block mb-1">Votre avis</a>
-                    <a href="#" class="text-white d-block mb-1">Devenir Franchisé</a>
-                </div>
-            </div>
-            <hr class="mb-1">
-            <div class="logo">
-                <div class="left">
-                    <img src="/icon/instagram.svg" alt="iconInstagram" class="logoInstagram">
-                    <img src="/icon/facebook.svg" alt="iconFacebook" class="logoFacebook">
-                    <img src="/icon/linkedin.svg" alt="iconLinkedin" class="logoLinkedin">
-                </div>
-                <div class="right">
-                    <img src="/image/logo-mns.png" alt="imageMNS" class="logoMNS">
-                </div>
-            </div>
-        </footer>
+        <?php
+        require_once $_SERVER['DOCUMENT_ROOT'] . "/pages/components/footer.php";
+        ?>
     </div>
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
