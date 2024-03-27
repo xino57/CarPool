@@ -1,3 +1,7 @@
+<?php
+    require_once $_SERVER["DOCUMENT_ROOT"]."/pages/protected/include/protect.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

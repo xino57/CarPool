@@ -37,7 +37,7 @@
         
         session_start();
         $_SESSION['user_connected'] = "OK";
-        $_SESSION['user_name'] = $row_user['admin_name'];
+        $_SESSION['user_name'] = $row_user['user_name'];
         header("location: index.php");
         exit();
 
@@ -72,7 +72,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="user_password" class="form-label">Admin password :</label>
-                                <input type="user_password" class="form-control" name="user_password"
+                                <input type="password" class="form-control" name="user_password"
                                     id="user_password" placeholder="Enter your admin password">
                             </div>
                             <button type="submit" value="ok" class="btn btn-primary btn-block">Se connecter</button>
